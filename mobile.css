@@ -1,0 +1,340 @@
+@media screen and (min-width: 767px) and (max-width: 1060px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    .bg-nav {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        
+    }
+
+    .hero-section h1 {
+    }
+    .hero-section p {
+    }
+
+    .story {
+        flex-direction: row;
+    }
+    .img-story img {
+        width: 150px;
+    }
+    .desc-story {
+        display: grid;
+        place-items: left;
+    }
+    .desc-story h1 {
+    }
+    .desc-story p {
+        width: 300px;
+    }
+
+    .menu h1 {
+        letter-spacing: 3px;
+        font-size: 38px;
+        font-weight: 500;
+    }
+    .menu p {
+        font-size: 14px;
+        font-weight: 300;
+        width: 250px;
+    }
+    .wrapper-menu {
+        grid-template-columns: auto auto;
+        place-items: center;
+    }
+    
+    .booking {
+        flex-direction: row;
+    }
+    .desc-booking h1 {
+        width: 300px;
+    }
+    .desc-booking p {
+        width: 300px;
+    }
+    .booking img {
+        width: 330px;
+    }
+
+    .review h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .desc-review {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+    .desc-review p {
+        text-align: center;
+        font-size: 12px;
+        width: 280px;
+    }
+
+
+    .chef p {
+        width: 300px;
+    }
+    .chef-choose {
+        grid-template-columns: auto auto;
+    }
+
+    .img-gallery img {
+        width: 270px;
+    }
+    .middle-img img {
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .imghome {
+        background-image: url(assets/bg-image.jpg);
+        background-position: bottom;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .bg-nav {
+        width: 100%;
+        z-index: 5;
+    }
+    nav {
+        width: 100%;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        visibility: visible;
+    }
+    .hamburger.active .burger1 {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburger.active .burger2 {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    .hamburger.active .burger3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .burger {
+        transition: .3s ease;
+        width: 30px;
+        height: 4px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    .navMenu {
+        padding: 20px 0;
+        transform: translateX(0);
+        opacity: 1;
+        visibility: hidden;
+        text-align: center;
+        background-color: rgba(209, 209, 209, 0.596);
+        position: absolute;
+        flex-direction: column;
+        transform: translateY(70%) translateX(80px);
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .navMenu.active {
+        padding: 20px 0;
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        text-align: center;
+        background-color: rgba(209, 209, 209, 0.596);
+        position: absolute;
+        flex-direction: column;
+        transform: translateY(70%) translateX(80px);
+        padding: 30px;
+        border-radius: 20px;
+    }
+    
+
+    .hero-section {
+        padding-top: 350px;
+        padding-bottom: 280px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-section h1 {
+        font-size: 26px;
+    } 
+    .hero-section p {
+        font-size: 12px;
+        width: 360px;
+    }     
+
+    .story {
+        flex-direction: column;
+    }
+    .img-story img {
+        width: 150px;
+    }
+    .desc-story {
+        display: grid;
+        place-items: left;
+    }
+    .desc-story h1 {
+        font-size: 34px;
+    }
+    .desc-story p {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .menu h1 {
+        letter-spacing: 3px;
+        font-size: 34px;
+        font-weight: 500;
+    }
+    .menu p {
+        font-size: 14px;
+        font-weight: 300;
+        width: 250px;
+    }
+    .wrapper-menu {
+        grid-template-columns: auto;
+        place-items: center;
+    }
+    .card-menu {
+        width: 290px;
+    }
+    .card-menu img {
+        width: 290px;
+    }
+    .card-menu h2 {
+        font-size: 22px;
+    }
+    .time img {
+        width: 20px;
+    }
+    .time h4 { 
+        font-size: 18px;
+    }
+    .card-bottom img {
+        width: 110px;
+    }
+    .card-bottom a{
+        font-size: 20px;
+    }
+    
+    .booking {
+        flex-direction: column;
+    }
+    .desc-booking h1 {
+        width: 300px;
+        font-size: 31px;
+    }
+    .desc-booking p {
+        width: 350px;
+        font-size: 14px;
+    }
+    .booking img {
+        width: 330px;
+    }
+
+    .review h1 {
+        height: 100px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .desc-review {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .desc-review p {
+        text-align: center;
+        font-size: 12px;
+        width: 280px;
+    }
+
+    .chef h1 {
+        font-size: 34px;
+    }
+    .chef p {
+        width: 240px;
+        font-size: 13px;
+    }
+    .chef-choose {
+        grid-template-columns: auto;
+    }
+    .card-chef h1 {
+        font-size: 26px;
+    }
+    .card-chef h3 {
+        font-size: 12px;
+    }
+
+    .gallery h1 {
+        font-size: 34px;
+    }
+    .gallery p {
+        width: 280px;
+        font-size: 13px;
+    }
+    .img-gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .img-gallery img {
+        width: 130px;
+        border-radius: 5px;
+    }
+    .middle-img img {
+        width: 90px;
+    }
+    
+
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 40px;
+    }
+    .profile-footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-footer h1 {
+        font-size: 36px;
+    }
+    .contact-footer {
+        align-items: center;
+    }
+    .submit {
+        font-size: 16px;
+        padding: 7px 15px;
+    }
+    .teks-input {
+        font-size: 16px;
+        padding: 7px 15px;
+    }
+}
